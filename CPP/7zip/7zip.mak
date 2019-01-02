@@ -27,11 +27,11 @@ OBJS = \
   $(COMPRESS_OBJS) \
   $(CRYPTO_OBJS) \
   $(C_OBJS) \
-# stonebig try  $(BROTLI_OBJS) \
+  $(BROTLI_OBJS) \
   $(HASHES_OBJS) \
-# stonebig try  $(LIZARD_OBJS) \
+  $(LIZARD_OBJS) \
   $(LZ4_OBJS) \
-# stonebig try  $(LZ5_OBJS) \
+  $(LZ5_OBJS) \
   $(ZSTD_OBJS) \
   $(ZSTDMT_OBJS) \
   $(FASTLZMA2_OBJS) \
@@ -180,25 +180,25 @@ $(C_OBJS): ../../../../C/$(*B).c
 	$(COMPL_O2)
 !ENDIF
 
-# stonebig try!IFDEF BROTLI_OBJS
-# stonebig try$(BROTLI_OBJS): ../../../../C/brotli/$(*B).c
-# stonebig try	$(COMPL_O2)
-# stonebig try!ENDIF
+!IFDEF BROTLI_OBJS
+$(BROTLI_OBJS): ../../../../C/brotli/$(*B).c
+	$(COMPL_O2)
+!ENDIF
 
-# stonebig try!IFDEF LIZARD_OBJS
-# stonebig try$(LIZARD_OBJS): ../../../../C/lizard/$(*B).c
-# stonebig try	$(COMPL_O2)
-# stonebig try!ENDIF
+!IFDEF LIZARD_OBJS
+$(LIZARD_OBJS): ../../../../C/lizard/$(*B).c
+	$(COMPL_O2)
+!ENDIF
 
 !IFDEF LZ4_OBJS
 $(LZ4_OBJS): ../../../../C/lz4/$(*B).c
 	$(COMPL_O2)
 !ENDIF
 
-# stonebig try!IFDEF LZ5_OBJS
-# stonebig try$(LZ5_OBJS): ../../../../C/lz5/$(*B).c
-# stonebig try	$(COMPL_O2)
-# stonebig try!ENDIF
+!IFDEF LZ5_OBJS
+$(LZ5_OBJS): ../../../../C/lz5/$(*B).c
+	$(COMPL_O2)
+!ENDIF
 
 !IFDEF ZSTD_OBJS
 $(ZSTD_OBJS): ../../../../C/zstd/$(*B).c
