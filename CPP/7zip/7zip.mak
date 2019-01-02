@@ -277,25 +277,25 @@ $(FASTLZMA2_OBJS): ../../../../C/fast-lzma2/$(*B).c
 	$(COMPLB_O2)
 {../../../../C}.c{$O}.obj::
 	$(COMPLB_O2)
-# stonebig try{../../../../C/brotli}.c{$O}.obj::
-# stonebig try	$(COMPLB_O2)
+{../../../../C/brotli}.c{$O}.obj::
+	$(COMPLB_O2)
 {../../../../C/hashes}.c{$O}.obj::
 	$(COMPLB_O2)
-# stonebig try{../../../../C/lizard}.c{$O}.obj::
-# stonebig try	$(COMPLB_O2)
+{../../../../C/lizard}.c{$O}.obj::
+	$(COMPLB_O2)
 {../../../../C/lz4}.c{$O}.obj::
 	$(COMPLB_O2)
-# stonebig try{../../../../C/lz5}.c{$O}.obj::
-# stonebig try	$(COMPLB_O2)
+{../../../../C/lz5}.c{$O}.obj::
+	$(COMPLB_O2)
 {../../../../C/zstd}.c{$O}.obj::
 	$(COMPLB_O2)
 {../../../../C/zstdmt}.c{$O}.obj::
 	$(COMPLB_O2) \
-# stonebig try	-I ../../../../C/brotli \
+	-I ../../../../C/brotli \
 	-I ../../../../C/hashes \
-# stonebig try	-I ../../../../C/lizard \
+	-I ../../../../C/lizard \
 	-I ../../../../C/lz4 \
-# stonebig try	-I ../../../../C/lz5 \
+	-I ../../../../C/lz5 \
 	-I ../../../../C/zstd
 {../../../../C/fast-lzma2}.c{$O}.obj::
 	$(COMPLB_O2) -DNO_XXHASH
