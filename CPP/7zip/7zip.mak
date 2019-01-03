@@ -27,7 +27,7 @@ OBJS = \
   $(COMPRESS_OBJS) \
   $(CRYPTO_OBJS) \
   $(C_OBJS) \
-  $(BROTLI_OBJS) \
+# stonebig  $(BROTLI_OBJS) \
   $(HASHES_OBJS) \
   $(LIZARD_OBJS) \
   $(LZ4_OBJS) \
@@ -180,10 +180,10 @@ $(C_OBJS): ../../../../C/$(*B).c
 	$(COMPL_O2)
 !ENDIF
 
-!IFDEF BROTLI_OBJS
-$(BROTLI_OBJS): ../../../../C/brotli/$(*B).c
-	$(COMPL_O2)
-!ENDIF
+# stonebig!IFDEF BROTLI_OBJS
+# stonebig$(BROTLI_OBJS): ../../../../C/brotli/$(*B).c
+# stonebig	$(COMPL_O2)
+# stonebig!ENDIF
 
 !IFDEF LIZARD_OBJS
 $(LIZARD_OBJS): ../../../../C/lizard/$(*B).c
@@ -277,8 +277,8 @@ $(FASTLZMA2_OBJS): ../../../../C/fast-lzma2/$(*B).c
 	$(COMPLB_O2)
 {../../../../C}.c{$O}.obj::
 	$(COMPLB_O2)
-{../../../../C/brotli}.c{$O}.obj::
-	$(COMPLB_O2)
+# stonebig{../../../../C/brotli}.c{$O}.obj::
+# stonebig	$(COMPLB_O2)
 {../../../../C/hashes}.c{$O}.obj::
 	$(COMPLB_O2)
 {../../../../C/lizard}.c{$O}.obj::
@@ -291,7 +291,7 @@ $(FASTLZMA2_OBJS): ../../../../C/fast-lzma2/$(*B).c
 	$(COMPLB_O2)
 {../../../../C/zstdmt}.c{$O}.obj::
 	$(COMPLB_O2) \
-	-I ../../../../C/brotli \
+# stonebig	-I ../../../../C/brotli \
 	-I ../../../../C/hashes \
 	-I ../../../../C/lizard \
 	-I ../../../../C/lz4 \
