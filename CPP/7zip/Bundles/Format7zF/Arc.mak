@@ -79,8 +79,8 @@ AR_OBJS = \
   $O\IhexHandler.obj \
   $O\LzHandler.obj \
   $O\Lz4Handler.obj \
-  $O\Lz5Handler.obj \
-  $O\LizardHandler.obj \
+# stonebig  $O\Lz5Handler.obj \
+# stonebig  $O\LizardHandler.obj \
   $O\LzhHandler.obj \
   $O\LzmaHandler.obj \
   $O\MachoHandler.obj \
