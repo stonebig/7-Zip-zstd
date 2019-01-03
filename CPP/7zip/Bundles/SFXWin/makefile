@@ -161,7 +161,7 @@ ZSTD_OBJS = \
   $O\error_private.obj \
 # stonebig  $O\fse_compress.obj \
   $O\fse_decompress.obj \
-  $O\hist.obj \
+# stonebig  $O\hist.obj \
 # stonebig  $O\huf_compress.obj \
   $O\huf_decompress.obj \
   $O\pool.obj \
