@@ -30,7 +30,7 @@ OBJS = \
 # stonebig  $(BROTLI_OBJS) \
   $(HASHES_OBJS) \
 # stonebig  $(LIZARD_OBJS) \
-  $(LZ4_OBJS) \
+# stonebig  $(LZ4_OBJS) \
 # stonebig  $(LZ5_OBJS) \
   $(ZSTD_OBJS) \
   $(ZSTDMT_OBJS) \
@@ -190,10 +190,10 @@ $(C_OBJS): ../../../../C/$(*B).c
 # stonebig	$(COMPL_O2)
 # stonebig!ENDIF
 
-!IFDEF LZ4_OBJS
-$(LZ4_OBJS): ../../../../C/lz4/$(*B).c
-	$(COMPL_O2)
-!ENDIF
+# stonebig!IFDEF LZ4_OBJS
+# stonebig$(LZ4_OBJS): ../../../../C/lz4/$(*B).c
+# stonebig	$(COMPL_O2)
+# stonebig!ENDIF
 
 # stonebig!IFDEF LZ5_OBJS
 # stonebig$(LZ5_OBJS): ../../../../C/lz5/$(*B).c
@@ -283,8 +283,8 @@ $(FASTLZMA2_OBJS): ../../../../C/fast-lzma2/$(*B).c
 	$(COMPLB_O2)
 # stonebig{../../../../C/lizard}.c{$O}.obj::
 # stonebig	$(COMPLB_O2)
-{../../../../C/lz4}.c{$O}.obj::
-	$(COMPLB_O2)
+# stonebig{../../../../C/lz4}.c{$O}.obj::
+# stonebig	$(COMPLB_O2)
 # stonebig{../../../../C/lz5}.c{$O}.obj::
 # stonebig	$(COMPLB_O2)
 {../../../../C/zstd}.c{$O}.obj::
@@ -294,7 +294,7 @@ $(FASTLZMA2_OBJS): ../../../../C/fast-lzma2/$(*B).c
 # stonebig	-I ../../../../C/brotli \
 	-I ../../../../C/hashes \
 # stonebig	-I ../../../../C/lizard \
-	-I ../../../../C/lz4 \
+# stonebig	-I ../../../../C/lz4 \
 # stonebig	-I ../../../../C/lz5 \
 	-I ../../../../C/zstd
 {../../../../C/fast-lzma2}.c{$O}.obj::

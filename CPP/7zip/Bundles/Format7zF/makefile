@@ -19,9 +19,9 @@ COMPRESS_OBJS = $(COMPRESS_OBJS) \
 # stonebig  $O\BrotliDecoder.obj \
 # stonebig  $O\BrotliEncoder.obj \
 # stonebig  $O\BrotliRegister.obj \
-  $O\Lz4Decoder.obj \
-  $O\Lz4Encoder.obj \
-  $O\Lz4Register.obj \
+# stonebig  $O\Lz4Decoder.obj \
+# stonebig  $O\Lz4Encoder.obj \
+# stonebig  $O\Lz4Register.obj \
 # stonebig  $O\LizardDecoder.obj \
 # stonebig  $O\LizardEncoder.obj \
 # stonebig  $O\LizardRegister.obj \
@@ -112,9 +112,9 @@ ZSTDMT_OBJS = \
 # stonebig  $O\lizard-mt_common.obj \
 # stonebig  $O\lizard-mt_compress.obj \
 # stonebig  $O\lizard-mt_decompress.obj \
-  $O\lz4-mt_common.obj \
-  $O\lz4-mt_compress.obj \
-  $O\lz4-mt_decompress.obj \
+# stonebig  $O\lz4-mt_common.obj \
+# stonebig  $O\lz4-mt_compress.obj \
+# stonebig  $O\lz4-mt_decompress.obj \
 # stonebig  $O\lz5-mt_common.obj \
 # stonebig  $O\lz5-mt_compress.obj \
 # stonebig  $O\lz5-mt_decompress.obj \
