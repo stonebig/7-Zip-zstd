@@ -147,12 +147,12 @@ COMPRESS_OBJS = $(COMPRESS_OBJS) \
   $O\Lz4Decoder.obj \
   $O\Lz4Encoder.obj \
   $O\Lz4Register.obj \
-  $O\LizardDecoder.obj \
-  $O\LizardEncoder.obj \
-  $O\LizardRegister.obj \
-  $O\Lz5Decoder.obj \
-  $O\Lz5Encoder.obj \
-  $O\Lz5Register.obj \
+# stonebig  $O\LizardDecoder.obj \
+# stonebig  $O\LizardEncoder.obj \
+# stonebig  $O\LizardRegister.obj \
+# stonebig  $O\Lz5Decoder.obj \
+# stonebig  $O\Lz5Encoder.obj \
+# stonebig  $O\Lz5Register.obj \
   $O\ZstdDecoder.obj \
   $O\ZstdEncoder.obj \
   $O\ZstdRegister.obj \
@@ -234,15 +234,15 @@ ZSTDMT_OBJS = \
 # stonebig  $O\brotli-mt_common.obj \
 # stonebig  $O\brotli-mt_compress.obj \
 # stonebig  $O\brotli-mt_decompress.obj \
-  $O\lizard-mt_common.obj \
-  $O\lizard-mt_compress.obj \
-  $O\lizard-mt_decompress.obj \
+# stonebig  $O\lizard-mt_common.obj \
+# stonebig  $O\lizard-mt_compress.obj \
+# stonebig  $O\lizard-mt_decompress.obj \
   $O\lz4-mt_common.obj \
   $O\lz4-mt_compress.obj \
   $O\lz4-mt_decompress.obj \
-  $O\lz5-mt_common.obj \
-  $O\lz5-mt_compress.obj \
-  $O\lz5-mt_decompress.obj \
+# stonebig  $O\lz5-mt_common.obj \
+# stonebig  $O\lz5-mt_compress.obj \
+# stonebig  $O\lz5-mt_decompress.obj \
   $O\zstd-mt_threading.obj \
 
 FASTLZMA2_OBJS = \

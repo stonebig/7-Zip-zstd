@@ -111,10 +111,10 @@ COMPRESS_OBJS = $(COMPRESS_OBJS) \
 # stonebig  $O\BrotliRegister.obj \
   $O\Lz4Decoder.obj \
   $O\Lz4Register.obj \
-  $O\LizardDecoder.obj \
-  $O\LizardRegister.obj \
-  $O\Lz5Decoder.obj \
-  $O\Lz5Register.obj \
+# stonebig  $O\LizardDecoder.obj \
+# stonebig  $O\LizardRegister.obj \
+# stonebig  $O\Lz5Decoder.obj \
+# stonebig  $O\Lz5Register.obj \
   $O\ZstdDecoder.obj \
   $O\ZstdRegister.obj \
 
@@ -193,12 +193,12 @@ ZSTD_OBJS = \
 ZSTDMT_OBJS = \
 # stonebig  $O\brotli-mt_common.obj \
 # stonebig  $O\brotli-mt_decompress.obj \
-  $O\lizard-mt_common.obj \
-  $O\lizard-mt_decompress.obj \
+# stonebig  $O\lizard-mt_common.obj \
+# stonebig  $O\lizard-mt_decompress.obj \
   $O\lz4-mt_common.obj \
   $O\lz4-mt_decompress.obj \
-  $O\lz5-mt_common.obj \
-  $O\lz5-mt_decompress.obj \
+# stonebig  $O\lz5-mt_common.obj \
+# stonebig  $O\lz5-mt_decompress.obj \
   $O\zstd-mt_threading.obj \
 
 !include "../../Aes.mak"
